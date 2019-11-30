@@ -1,13 +1,18 @@
-name: 'Wait'
-description: 'Wait a designated number of milliseconds'
+name: cspell
+description: A Spell Checker for Code!
 inputs:
-  milliseconds:  # id of input
-    description: 'number of milliseconds to wait'
+  paths:
+    description: Glob pattern of files to check
     required: true
-    default: '1000'
-outputs:
-  time: # output will be available to future steps 
-    description: 'The message to output'
+  config:
+    description: Configuration file to use. By default cspell looks for cspell.json in the current directory.
+  exclude:
+    description: Exclude files matching the glob pattern
+  unique:
+    description: Only output the first instance of a word not found in the dictionaries.
 runs:
   using: 'node12'
-  main: 'dist/index.js'
+  main: 'index.js'
+branding:
+  icon: 'pen-tool'  
+  color: 'gray-dark'

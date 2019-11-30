@@ -1,19 +1,12 @@
-name: "test-local"
-on:
-  pull_request:
-  push:
-    branches:
-      - master
-      - 'releases/*'
-
+name: CI
+on: [ push ]
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-
     - run: npm ci
     - run: npm test
     - uses: ./
       with:
-        milliseconds: 1000
+        paths: "**/+(LICENSE|*.{md,js})"
