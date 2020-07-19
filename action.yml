@@ -1,18 +1,21 @@
-name: cspell
-description: A Spell Checker for Code!
+name: simple-cspell
+description: A Spell Checker for Code! (Unofficial)
 inputs:
   paths:
     description: Glob pattern of files to check
     required: true
   config:
     description: Configuration file to use. By default cspell looks for cspell.json in the current directory.
+    required: false
   exclude:
     description: Exclude files matching the glob pattern
+    required: false
   unique:
     description: Only output the first instance of a word not found in the dictionaries.
+    required: false
 runs:
   using: 'node12'
   main: 'index.js'
 branding:
-  icon: 'pen-tool'  
+  icon: 'book-open'
   color: 'gray-dark'
