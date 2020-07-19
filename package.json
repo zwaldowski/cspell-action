@@ -1,11 +1,10 @@
 {
   "name": "cspell-action",
   "version": "1.0.0",
-  "description": "JavaScript Action Template",
+  "description": "Spell checker for GitHub Actions",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint index.js",
-    "package": "ncc build index.js -o dist"
+    "lint": "eslint index.js"
   },
   "repository": {
     "type": "git",
@@ -14,7 +13,11 @@
   "keywords": [
     "GitHub",
     "Actions",
-    "JavaScript"
+    "JavaScript",
+    "cspell",
+    "spelling",
+    "Spell",
+    "Checker"
   ],
   "author": "Zachary Waldowski",
   "license": "MIT",
