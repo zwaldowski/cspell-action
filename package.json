@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/zwaldowski/cspell-action#readme",
   "dependencies": {
-    "@actions/core": "^1.2.4",
+    "@actions/core": "^1.2.6",
     "cspell": "^4.0.63"
   },
   "devDependencies": {
