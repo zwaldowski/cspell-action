@@ -1,6 +1,10 @@
-# cspell action ![GitHub Actions status](https://github.com/zwaldowski/cspell-action/workflows/test-local/badge.svg)
+# cspell action
 
-This action runs [cspell](https://github.com/streetsidesoftware/cspell) to spell-check your code. Unknown words show up as annotations on GitHub.
+> **Warning**: Deprecated
+>
+> Prefer [`streetsidesoftware/cspell-action`](https://github.com/marketplace/actions/cspell-action).
+
+This action ran [cspell](https://github.com/streetsidesoftware/cspell) to spell-check your code. Unknown words showed up as annotations on GitHub.
 
 ## Inputs
 
